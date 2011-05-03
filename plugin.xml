@@ -7,6 +7,6 @@
 	<description>Support des squelettes suffix&eacute;s par rubrique et/ou par langue (-23.html, =23.html, et .en.html)</description>
 	<prefix>squelettes_par_rubrique</prefix>
 	<options>squelettes_par_rubrique_options.php</options>
-	<necessite id="SPIP" version="[2.3.0-dev;]" />
+	<necessite id="SPIP" version="[3.0.0-dev;]" />
 	<categorie>outils</categorie>
 </plugin>
