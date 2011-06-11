@@ -4,6 +4,7 @@
 	<version>1.0.0</version>
 	<icon>layout-link-32.png</icon>
 	<etat>test</etat>
+	<slogan>Support des squelettes suffix&eacute;s dans SPIP</slogan>
 	<description>Support des squelettes suffix&eacute;s par num&eacute;ro de rubrique et/ou par code de langue :
 (-23.html, =23.html, et .en.html)</description>
 	<prefix>squelettes_par_rubrique</prefix>
