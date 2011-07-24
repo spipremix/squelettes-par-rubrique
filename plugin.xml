@@ -2,7 +2,7 @@
 	<nom>Squelettes par Rubrique</nom>
 	<auteur>Collectif SPIP</auteur>
 	<version>1.0.0</version>
-	<icon>layout-link-32.png</icon>
+	<icon>squelettes_par_rubrique-32.png</icon>
 	<etat>test</etat>
 	<slogan>Support des squelettes suffix&eacute;s dans SPIP</slogan>
 	<description>Support des squelettes suffix&eacute;s par num&eacute;ro de rubrique et/ou par code de langue :
