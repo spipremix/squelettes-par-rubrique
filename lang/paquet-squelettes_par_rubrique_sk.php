@@ -8,8 +8,8 @@ if (!defined('_ECRIRE_INC_VERSION')) return;
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// S
-	'squelettes_par_rubrique_description' => 'Podpora šablón vo forme prípony podľa čísla rubriky a/lebo kódu jazyka: (-23.html, =23.html a .en.html)', # MODIF
-	'squelettes_par_rubrique_slogan' => 'Podpora šablón vo forme prípony v SPIPe'
+	'squelettes_par_rubrique_description' => 'Podpora šablón pripojených vo forme prípony podľa čísla rubriky a/lebo kódu jazyka: (-23.html, =23.html a .en.html)',
+	'squelettes_par_rubrique_slogan' => 'Podpora pripojených šablón v SPIPe'
 );
 
 ?>
