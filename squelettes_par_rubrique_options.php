@@ -10,18 +10,28 @@
  *  Pour plus de details voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
+/**
+ * Déclarations de pipelines
+ * 
+ * @package SPIP\SquelettesParRubrique\Pipelines
+**/
 if (!defined("_ECRIRE_INC_VERSION")) return;
 
 if (!isset($GLOBALS['spip_pipeline']['styliser']))
 	$GLOBALS['spip_pipeline']['styliser'] = '';
+
+// Ajoute à la fin du pipeline styliser la recherche de squelettes par rubriques et par langue
 $GLOBALS['spip_pipeline']['styliser'] .= '||squelettes_par_rubrique_styliser_par_rubrique|squelettes_par_rubrique_styliser_par_langue';
 
 /**
- * Options de recherche de squelette par le styliseur, appele par le pipeline 'styliser' :
- * Squelette par rubrique squelette-XX.html ou squelette=XX.html
+ * Cherche un squelette par rubrique squelette-XX.html ou squelette=XX.html
+ * 
+ * Options de recherche de squelette par le styliseur, appelé par le pipeline 'styliser'
  *
- * @param <type> $flux
- * @return <type>
+ * @pipeline styliser
+ * 
+ * @param array $flux  Données du pipeline
+ * @return array       Données du pipeline
  */
 function squelettes_par_rubrique_styliser_par_rubrique($flux) {
 
@@ -53,12 +63,16 @@ function squelettes_par_rubrique_styliser_par_rubrique($flux) {
 	return $flux;
 }
 
-/**
- * Options de recherche de squelette par le styliseur, appele par le pipeline 'styliser' :
- * Squelette par langue squelette.en.html
+
+/** 
+ * Cherche l'existence un squelette par langue squelette.en.html
  *
- * @param array $flux
- * @return array
+ * Options de recherche de squelette par le styliseur, appelé par le pipeline 'styliser'
+ *
+ * @pipeline styliser
+ * 
+ * @param array $flux  Données du pipeline
+ * @return array       Données du pipeline
  */
 function squelettes_par_rubrique_styliser_par_langue($flux) {
 
