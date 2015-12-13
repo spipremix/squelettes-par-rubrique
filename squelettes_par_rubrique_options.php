@@ -59,9 +59,9 @@ function squelettes_par_rubrique_styliser_par_rubrique($flux) {
 					}
 				} while (
 					$maxiter--
-					AND $id_rubrique = quete_parent($id_rubrique)
+					and $id_rubrique = quete_parent($id_rubrique)
 					// se proteger des references circulaires
-					AND $id_rubrique != $flux['args']['id_rubrique']
+					and $id_rubrique != $flux['args']['id_rubrique']
 				);
 			}
 			// sauver le squelette
