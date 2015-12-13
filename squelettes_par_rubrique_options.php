@@ -12,25 +12,28 @@
 
 /**
  * Déclarations de pipelines
- * 
+ *
  * @package SPIP\SquelettesParRubrique\Pipelines
-**/
-if (!defined("_ECRIRE_INC_VERSION")) return;
+ **/
+if (!defined("_ECRIRE_INC_VERSION")) {
+	return;
+}
 
-if (!isset($GLOBALS['spip_pipeline']['styliser']))
+if (!isset($GLOBALS['spip_pipeline']['styliser'])) {
 	$GLOBALS['spip_pipeline']['styliser'] = '';
+}
 
 // Ajoute à la fin du pipeline styliser la recherche de squelettes par rubriques et par langue
 $GLOBALS['spip_pipeline']['styliser'] .= '||squelettes_par_rubrique_styliser_par_rubrique|squelettes_par_rubrique_styliser_par_langue';
 
 /**
  * Cherche un squelette par rubrique squelette-XX.html ou squelette=XX.html
- * 
+ *
  * Options de recherche de squelette par le styliseur, appelé par le pipeline 'styliser'
  *
  * @pipeline styliser
- * 
- * @param array $flux  Données du pipeline
+ *
+ * @param array $flux Données du pipeline
  * @return array       Données du pipeline
  */
 function squelettes_par_rubrique_styliser_par_rubrique($flux) {
@@ -43,9 +46,9 @@ function squelettes_par_rubrique_styliser_par_rubrique($flux) {
 		// fond=10
 		if ($id_rubrique = $flux['args']['id_rubrique']) {
 			$f = "$squelette=$id_rubrique";
-			if (@file_exists("$f.$ext"))
+			if (@file_exists("$f.$ext")) {
 				$squelette = $f;
-			else {
+			} else {
 				$maxiter = 10000; // on ne remonte pas au dela en profondeur
 				// fond-10 fond-<rubriques parentes>
 				do {
@@ -56,9 +59,9 @@ function squelettes_par_rubrique_styliser_par_rubrique($flux) {
 					}
 				} while (
 					$maxiter--
-				  AND $id_rubrique = quete_parent($id_rubrique)
+					AND $id_rubrique = quete_parent($id_rubrique)
 					// se proteger des references circulaires
-				  AND $id_rubrique != $flux['args']['id_rubrique']
+					AND $id_rubrique != $flux['args']['id_rubrique']
 				);
 			}
 			// sauver le squelette
@@ -70,14 +73,14 @@ function squelettes_par_rubrique_styliser_par_rubrique($flux) {
 }
 
 
-/** 
+/**
  * Cherche l'existence un squelette par langue squelette.en.html
  *
  * Options de recherche de squelette par le styliseur, appelé par le pipeline 'styliser'
  *
  * @pipeline styliser
- * 
- * @param array $flux  Données du pipeline
+ *
+ * @param array $flux Données du pipeline
  * @return array       Données du pipeline
  */
 function squelettes_par_rubrique_styliser_par_langue($flux) {
@@ -89,8 +92,10 @@ function squelettes_par_rubrique_styliser_par_langue($flux) {
 		// Affiner par lang
 		if ($lang = $flux['args']['lang']) {
 			$l = lang_select($lang);
-			$f = "$squelette.".$GLOBALS['spip_lang'];
-			if ($l) lang_select();
+			$f = "$squelette." . $GLOBALS['spip_lang'];
+			if ($l) {
+				lang_select();
+			}
 			if (@file_exists("$f.$ext")) {
 				// sauver le squelette
 				$flux['data'] = $f;
