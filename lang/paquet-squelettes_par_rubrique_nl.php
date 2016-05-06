@@ -14,4 +14,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'squelettes_par_rubrique_slogan' => 'Ondersteuning van suffix ingewijden skeletten in SPIP '
 );
 
-?>

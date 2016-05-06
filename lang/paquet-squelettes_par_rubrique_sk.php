@@ -14,4 +14,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'squelettes_par_rubrique_slogan' => 'Podpora pripojených šablón v SPIPe'
 );
 
-?>

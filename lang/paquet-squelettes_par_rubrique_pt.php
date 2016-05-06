@@ -14,4 +14,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'squelettes_par_rubrique_slogan' => 'Apoio de modelos com sufixo em SPIP'
 );
 
-?>
