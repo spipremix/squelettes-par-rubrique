@@ -13,4 +13,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'squelettes_par_rubrique_description' => 'Дозволяє задавати окремі шаблони за номером рубріки, статті, а також мовної версії: (-23.html, =23.html, и .en.html)',
 	'squelettes_par_rubrique_slogan' => 'Шаблони за номерами для SPIP'
 );
-

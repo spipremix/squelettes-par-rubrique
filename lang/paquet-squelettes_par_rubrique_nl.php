@@ -13,4 +13,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'squelettes_par_rubrique_description' => 'Ondersteuning van de suffix ingewijden skeletten (met rubrieknummers en / of taal-code: -23.html, =23.html   en .en.html)',
 	'squelettes_par_rubrique_slogan' => 'Ondersteuning van suffix ingewijden skeletten in SPIP '
 );
-
