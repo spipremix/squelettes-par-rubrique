@@ -13,4 +13,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'squelettes_par_rubrique_description' => 'Implementación de esqueletos con sufijo por numero de sección y/o por código de idioma: (-23.html, =23.html, y .en.html)',
 	'squelettes_par_rubrique_slogan' => 'Implementación de esqueletos con sufijos de SPIP'
 );
-

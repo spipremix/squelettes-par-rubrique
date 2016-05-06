@@ -13,4 +13,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'squelettes_par_rubrique_description' => 'Support of suffixed templates by section number and/or by language code : (-23.html, =23.html, and .en.html)',
 	'squelettes_par_rubrique_slogan' => 'Support of suffixed templates in SPIP'
 );
-

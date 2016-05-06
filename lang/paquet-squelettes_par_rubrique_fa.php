@@ -13,4 +13,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'squelettes_par_rubrique_description' => 'پشتيبان اسكلت‌هاي پسوندي توسط تعدادي بخش و/يا توسط كدر زبان :  (-23.html, =23.html, et .en.html)  ',
 	'squelettes_par_rubrique_slogan' => 'پشتيباني از اسكليت‌هاي  پسوندي در اسپيپ '
 );
-
